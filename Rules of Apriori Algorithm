@@ -1,15 +1,10 @@
 About Apriori
 An association mining problem can be decomposed into two subproblems:
-
 Find all combinations of items in a set of transactions that occur with a specified minimum frequency. These combinations are called frequent itemsets. (See "Frequent Itemsets" for an example.)
-
 Calculate rules that express the probable co-occurrence of items within frequent itemsets. (See "Example: Calculating Rules from Frequent Itemsets".)
-
 Apriori calculates the probability of an item being present in a frequent itemset, given that another item or items is present.
-
 Association rule mining is not recommended for finding associations involving rare events in problem domains with a large number of items. Apriori discovers patterns with frequency above the minimum support threshold. Therefore, in order to find associations involving rare events, the algorithm must run with very low minimum support values. However, doing so could potentially explode the number of enumerated itemsets, especially in cases with a large number of items. This could increase the execution time significantly. Classification or anomaly detection may be more suitable for discovering rare events when the data has a high number of attributes.
 
 Association Rules
 The Apriori algorithm calculates rules that express probabilistic relationships between items in frequent itemsets For example, a rule derived from frequent itemsets containing A, B, and C might state that if A and B are included in a transaction, then C is likely to also be included.
-
 An association rule states that an item or group of items implies the presence of another item with some probability. Unlike decision tree rules, which predict a target, association rules simply express correlation.
