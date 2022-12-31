@@ -1,3 +1,3 @@
 Conclusion :
-•	If the lift > 1, then we can say that customers buying more than 1 products combination is more frequent. But here there are no such combinations whose lift value is more than 1.
-•	So, there is no such combination of creating combo pack offer
+
+* The itemset which have highest support count is **[i2,i5,i3] = 2** which means people are more frequently and commonly purchasing i2,i5,i3 items in associative manner.
